@@ -18,6 +18,9 @@
 			opacity: 1;
 			transform: scale(1.29);
 		}
+		img{
+			transition: .4s all;
+		}
 		.slick-slide {
 			outline: none
 		}

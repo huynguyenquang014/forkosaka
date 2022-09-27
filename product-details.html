@@ -1,24 +1,129 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<title>ForKosaka</title>
-		<meta name="format-detection" content="telephone=no" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="./assets/css/slick.css">
-		<link href="./assets/css/style.css" rel="stylesheet">
-	</head>
 
-	<body>
-		<section class="p-product-details">
-			
-		</section>
+<head>
+    <meta charset="UTF-8">
+    <title>ForKosaka</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
 
-		<!-- Javascript -->
-		<script src="./assets/js/jquery.min.js"></script>
-		<script src="./assets/js/slick.min.js"></script>
-		<script src="./assets/js/jquery.easing.min.js"></script>
-		<script src="./assets/js/common.js"></script>
-	</body>
+<body>
+    <section class="p-product-details">
+        <!--btn cart-->
+        <div class="p-product-details__cart">
+            <a href="#">
+                <img src="./assets/img/product-details/icn_cart.svg" alt="">
+                <p>
+                    <span>99</span>
+                </p>
+            </a>
+        </div>
+        <!--end btn cart-->
+
+        <!--main-->
+        <div class="p-product-details__inner">
+            <img class="p-product-details__label-bg" src="./assets/img/product-details/img_label.png" alt="">
+
+            <!--slier-->
+            <div class="p-product-details__slider">
+                <div class="p-product-details__slider-item">
+                    <img src="./assets/img/product-details/img_slider_1.png">
+                </div>
+                <div class="p-product-details__slider-item">
+                    <img src="./assets/img/product-details/img_slider_2.png">
+                </div>
+                <div class="p-product-details__slider-item">
+                    <img src="./assets/img/product-details/img_slider_3.png">
+                </div>
+                <div class="p-product-details__slider-item">
+                    <img src="./assets/img/product-details/img_slider_4.png">
+                </div>
+            </div>
+            <!--end slider-->
+
+            <div class="p-product-details__desgin">
+                <h5>2022年5月ランダム生写真5枚セット/チョーカーデザイン</h5>
+                <p class="p-product-details__desgin__endow">
+                    <span>仅限会员 </span>
+                </p>
+            </div>
+            <div class="p-product-details__total">
+                <p>
+                    <strong>1,100</strong>円
+                    <span>（税込）</span>
+                </p>
+            </div>
+            <div class="quantity">
+                <label for="数量" class="quatity-label">数量</label>
+                <input type="number" min="1" max="999" step="1" value="1">
+            </div>
+            <div class="p-product-details__custom-select">
+                <label for="項目">項目</label>
+                <select name="" id="">
+					<option value="選択してください" hidden selected disabled>選択してください</option>
+					<option value="demo">demo</option>
+				</select>
+                <img class="p-product-details__custom-select__image" src="./assets/img/product-details/icn_next-input.png" alt="">
+            </div>
+            <div class="p-product-details__desc">
+                <p>
+                    【予約販売受付期間】<br /> 6/5(日)23:00まで <br /> ※「2022年5月ランダム生写真5枚セット/チョーカーデザイン」同士の同梱購入が可能です。それ以外の商品とは同梱できません。予めご了承ください。
+                </p>
+            </div>
+            <div class="p-product-details__group-btn-add-cart">
+                <a href="#">
+                    <img src="./assets/img/product-details/icn_add-cart.svg" alt="">
+                    <span>添加到购物车</span>
+                </a>
+            </div>
+
+            <div class="p-product-details__information">
+                <h3>商品情報</h3>
+
+                <p>※昨今の社会情勢(物流状況等)により、商品の発送が遅れる場合がございます。予めご了承ください。<br> -----------------------------------
+                </p>
+                <p>
+                    ※本商品は予約販売商品です。 ※本商品はサイン入りカットはございません。予めご了承ください。 <br>
+                </p>
+
+                <p>
+                    2022年5月ランダム生写真5枚セット/チョーカーデザイン <br> (44名×3カット 全132種)
+
+                </p>
+                <p>
+                    【お届け予定日】 <br> 2022/06/21(火) ～ 2022/06/30(木)までに順次配送予定
+                </p>
+
+                <p>
+                    【決済方法】<br> クレジットカード決済、コンビニ決済 <br> ※代引き決済、ヤマト後払い決済はおこなっておりません。
+
+                </p>
+                <p>
+                    ※画像はイメージとなりますため仕上がりのデザインは異なる場合がございますこと予めご了承ください。<br /> ※お客様がお使いになられているパソコン・携帯電話のご使用環境等により、実際の商品と比較して色味等が若干異なって見える場合がございます。
+                </p>
+
+                </p>
+            </div>
+
+            <div class="p-product-details__group-btn-add-cart">
+                <a href="#">
+                    <img src="./assets/img/product-details/icn_add-cart.svg" alt="">
+                    <span>添加到购物车</span>
+                </a>
+            </div>
+        </div>
+        <!--end main-->
+    </section>
+
+    <!-- Javascript -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
 </html>

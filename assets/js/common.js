@@ -17,6 +17,18 @@ $(document).ready(function(){
 		}]
 	});
 
+	//slider product-details
+	$('.p-product-details__slider').slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		adaptiveHeight: true,
+		nextArrow: false,
+		prevArrow: false,
+	});
+	
+
 	//custom qty
 	(function() {
 		window.inputNumber = function(el) {
@@ -57,8 +69,8 @@ $(document).ready(function(){
 	inputNumber($('.input-number'));
 
 	//customs qty2
-	$('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="./assets/img/common/icn_btn-up.svg"></div><div class="quantity-button quantity-down"><img src="./assets/img/common/icn_btn-down.svg"></div></div>').insertAfter('.p-shopping-cart__ordered__box__action__qty2 input');
-	$('.p-shopping-cart__ordered__box__action__qty2').each(function() {
+	$('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="./assets/img/common/icn_btn-up.svg"></div><div class="quantity-button quantity-down"><img src="./assets/img/common/icn_btn-down.svg"></div></div>').insertAfter('.quantity input');
+	$('.quantity').each(function() {
 		var spinner = jQuery(this),
 			input = spinner.find('input[type="number"]'),
 			btnUp = spinner.find('.quantity-up'),
