@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.c-floating-banner {
+	background: transparent;
+	position: fixed;
+	right: 20px;
+	top: 120px;
+	z-index: 1;
+	width: 12%;
+	max-width: 190px;
+	@include sp {
+		width: 20%;
+		top: auto;
+		bottom: 50px;
+	}
+	a {
+		display: inline-block;
+	}
+
+}

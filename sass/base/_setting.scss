@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+// ============================================================
+// 設定
+// ============================================================
+
+// HTML5の場合は「true」
+$html5 : true;
+
+// compass ブラウザサポート
+$legacy-support-for-ie6 : true;
+$legacy-support-for-ie7 : true;
+
+$experimental-support-for-webkit : true;
+$experimental-support-for-mozilla : true;
+$experimental-support-for-opera : true;
+$experimental-support-for-microsoft : true;
+$experimental-support-for-khtml : false;
+
+//ie9用 svg
+$experimental-support-for-svg: true;
+
+// 画像パス
+$imgPath : "../images/";
+
+// commonフォルダ内の画像のパス
+$commonImgPath: "../common/images/";
+
+// ページの全体の横幅
+$baseWidth : 1000px;
+
+// 標準font-family
+$font-family: 'Noto Sans SC', sans-serif;
+
+// 標準行間
+$lineHeight : 100%;
+$lineHeightText:1.6;
+$lineHeightText2:1.8;
+
+// カラー
+$cBase:#000000;
+$cAccent:#8e008c;
+
+// 標準テキストカラー
+$textColor : #000000;
+
+// 標準リンクカラー
+$linkColor : $cBase;
+$linkColor_visit : #cc9999;
+$linkColor_active : #cc9999;
+$linkColor_hover : #cc9999;
+
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+// ============================================================
+// common
+// ============================================================
+
+html{
+	overflow-x: hidden;
+}
+body{
+	color: #000;
+	font-family: $font-family;
+	background: url("../img/common/bg_body.png");
+	font-feature-settings: "halt" 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	font-weight: 400;
+}//body
+
+* {
+	box-sizing: border-box;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	transition: all .1s ease;
+	display: inline-block;
+	
+	&:hover{
+		opacity: .6;
+	}//hover
+}//a
+
+img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+table {
+	width:100%;
+}
+input {
+	-webkit-appearance: none;
+}
+a:focus,
+input:focus {
+	outline: none;
+}

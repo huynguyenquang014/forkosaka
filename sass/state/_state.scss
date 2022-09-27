@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.is-sp-visible{
+	display:none;
+	@include sp{
+		display:block !important;
+	}//sp
+}//sp-visible
+
+.is-sp-invisible{
+	@include sp{
+		display:none !important;
+	}//sp
+}//sp-visible
+
+body.is-lock {
+	overflow: hidden;
+}
